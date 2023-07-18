@@ -26,9 +26,8 @@ class Book {
   }
 }
 
-class BookShelf extends Object {
+class BookShelf {
   #shelf;
-
   get shelf() {
     return this.#shelf;
   }
@@ -37,7 +36,6 @@ class BookShelf extends Object {
   }
 
   constructor() {
-    super();
     this.#shelf = [];
   }
 
@@ -46,8 +44,9 @@ class BookShelf extends Object {
   }
 
   clone() {
-    console.log(super.clone);
-    return super.clone();
+    const clone = new BookShelf();
+    clone.shelf = this.shelf.map((book) => new Book(book.author, book.title));
+    return clone;
   }
 
   toString() {
@@ -64,8 +63,12 @@ bookShelf.addBook(new Book("조정래", "태백산맥"));
 bookShelf.addBook(new Book("박완서", "나목"));
 bookShelf.addBook(new Book("박경리", "토지"));
 
-console.log(bookShelf.toString());
-
 const another = bookShelf.clone();
 
-console.log(another);
+console.log(bookShelf.toString());
+console.log(another.toString());
+
+bookShelf.shelf[0].title = "다른거";
+
+console.log(bookShelf.toString());
+console.log(another.toString());
