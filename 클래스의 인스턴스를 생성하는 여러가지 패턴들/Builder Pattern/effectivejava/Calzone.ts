@@ -6,7 +6,7 @@ class Builder extends PizzaBuilder {
     super();
   }
 
-  getSauceInside() {
+  sauceInside() {
     this.sauce = true;
     return this;
   }
