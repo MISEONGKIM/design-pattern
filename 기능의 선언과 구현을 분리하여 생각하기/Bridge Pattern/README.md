@@ -7,8 +7,8 @@
 * 위 그림으로 brige pattern을 설명
 
   - 구현부를 확장하는 쪽, 기능부분을 확장하는 쪽 두군데로 나눈다.
-  - 기능부 : list가 있는 데 stack/queue/dequeue 등이 있다.
-  - 구현부 :abstract list를 구현한 array가 있고 linked list가 있다.
+  - 기능부(Abstraction) : list가 있는 데 stack/queue/dequeue 등이 있다.
+  - 구현부(Implementor) :abstract list를 구현한 array가 있고 linked list가 있다.
     - linked list에 doubly linked list, circular linked list가 있을 수 있다.
   - list에 abstract list를 하나 포함하고 있다. 즉, stack/queue/dequeue를 구현하기 위해 array를 가져다 쓸 수도 있고, linked list를 가져도 쓸 수도 있다.
 
