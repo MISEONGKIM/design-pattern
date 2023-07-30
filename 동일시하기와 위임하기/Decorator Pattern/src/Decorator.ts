@@ -1,4 +1,4 @@
-import { Coffee } from "./WhippedCream";
+import { Coffee } from "./Coffee";
 
 export abstract class Decorator extends Coffee {
   protected coffee: Coffee;
