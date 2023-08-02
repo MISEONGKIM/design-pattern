@@ -10,12 +10,12 @@ export class Product extends ProductCategory {
     return 1;
   }
   getName(): string {
-    return super.name;
+    return this.name;
   }
   getPrice(): number {
-    return super.price;
+    return this.price;
   }
   getId(): number {
-    return super.id;
+    return this.id;
   }
 }
