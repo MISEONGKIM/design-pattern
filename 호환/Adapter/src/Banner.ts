@@ -1,3 +1,4 @@
+// adaptee
 export class Banner {
   private str: string;
   constructor(str: string) {

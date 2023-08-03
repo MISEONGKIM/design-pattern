@@ -1,6 +1,6 @@
 import { Banner } from "./Banner";
 import { Print } from "./Print";
-//합성의 방법
+// adapter, 합성의 방법
 export class PrintBanner implements Print {
   private banner: Banner;
   constructor(str: string) {

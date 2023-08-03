@@ -12,9 +12,12 @@
   ![구조](adapter3.png)
 
 * Target : 클라이언트가 사용할 인터페이스를 정의 하고 있는 클래스
+  - 예제에서 Print
 * Client : Target 인터페이스를 사용하는 객체
 * Adaptee : 실제 제공되는 기능을 구현한 클래스
+  - 예제에서 Banner
 * Adapter : Target 인터페이스에 Adaptee의 인터페이스를 맞춰주는 클래스
+  - 예제에서 PrintBanner
 
 - Target에서 Adapter를 통해 Adaptee를 사용할 때 상속, 합성 두가지 방법이 있다.
   - 상속 : Adaptee를 Adapter가 상속받음.
