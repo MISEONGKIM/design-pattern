@@ -7,13 +7,14 @@
 * 코드를 재사용하기 위한 기술
 * 클래스의 공통 부분을 분리하는 기능을 제공
 * 템플릿 메서드에서 사용하는 오퍼레이션들
+  ![구조](diagram.jpg)
 
-  - ConcreteClass(AbstractClass를 구현하는 자식클래스) 오퍼레이션이나 클라이언트 클래스에 정의된 오퍼레이션
+  - SubClass1(AbstractClass를 구현하는 자식클래스) 오퍼레이션이나 클라이언트 클래스에 정의된 오퍼레이션
   - AbstractClass 에 정의된 오퍼레이션 중 구체적인 알고리즘을 가지고 있는 오퍼레이션
   - 기본 오퍼레이션으로 추상화된 오퍼레이션
   - 훅 오퍼레이션
 
 * 이 소스에서 PlayerLevel의 go()메서드가 **template method** 이다.
 
-* **hook method** : ConcreteClass가 필요에 따라서 오버라이딩 할 수 있는 메서드이다. 이를 통해, 더 확장성 있는 기능을 제공해줌.
+* **hook method** : SubClass1이 필요에 따라서 오버라이딩 할 수 있는 메서드이다. 이를 통해, 더 확장성 있는 기능을 제공해줌.
   - 이 소스에서 PlayerLevel의 fly()는 hook 메서드 이다.
