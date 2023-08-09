@@ -15,6 +15,9 @@
 ![구조](class_diagram.png)
 
 - Iterator : 요소에 접근하고 순회하는데 필요한 메서드 제공
+  - src/IteratorInterface
 - CocreteIterator :Iterator에 정의된 인터페이스를 구현하는 클래스
+  - src/BookShelfIterator,ReverseIterator
 - Aggregate : Iterator 객체를 생성하는 인터페이스 정의
 - ConcreteAggregate :해당하는 ConcreteIteratir의 인스턴스를 반환하도록 Iterator 생성 인터페이스를 구현
+  - src/BookShelf

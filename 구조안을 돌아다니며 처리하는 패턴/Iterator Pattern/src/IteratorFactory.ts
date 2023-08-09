@@ -7,6 +7,7 @@ import { ReverseIterator } from "./ReverseIterator";
 export class IteratorFactory extends Factory {
   static ifacgory = new IteratorFactory();
 
+  //싱글톤
   static getInstance(): IteratorFactory {
     if (this.ifacgory === null) {
       this.ifacgory = new IteratorFactory();
